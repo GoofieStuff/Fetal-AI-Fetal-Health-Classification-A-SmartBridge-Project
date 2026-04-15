@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetalHealth - Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
+                              url('https://images.unsplash.com/photo-1584820927498-cafe8c1c969b?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Neon Glow Effects based on status */
+        .status-Normal { color: #00ff00; text-shadow: 0 0 20px rgba(0, 255, 0, 0.6); }
+        .status-Suspect { color: #ffff00; text-shadow: 0 0 20px rgba(255, 255, 0, 0.6); }
+        .status-Pathological { color: #ff1493; text-shadow: 0 0 20px rgba(255, 20, 147, 0.6); }
+    </style>
+</head>
+<body class="bg-black text-white font-sans antialiased h-screen flex flex-col hero-bg">
+    
+    <nav class="flex items-center justify-between px-10 py-6 bg-transparent w-full">
+        <div class="text-[#00ff00] text-3xl font-extrabold tracking-wider uppercase">
+            FetalHealth.
+        </div>
+        
+        <div class="flex space-x-10 text-sm font-semibold text-[#00ff00]">
+            <a href="/" class="hover:text-white transition-colors">Home</a>
+            <a href="/home" class="hover:text-white transition-colors">Inspect</a>
+            <a href="/contact" class="hover:text-white transition-colors">Contact</a>
+        </div>
+        
+        <div>
+            <a href="/home" class="border-2 border-[#00ff00] text-[#00ff00] px-8 py-2 rounded hover:bg-[#00ff00] hover:text-black transition-all font-medium">
+                Predict Again
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+        <div class="bg-black/40 backdrop-blur-md p-12 rounded-3xl border border-white/10 shadow-2xl">
+            <h2 class="text-gray-400 uppercase tracking-[0.3em] text-sm mb-4 font-bold">Analysis Complete</h2>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Predict and monitor Fetal Health.
+            </h1>
+            
+            <div class="mt-8">
+                <p class="text-2xl font-medium mb-2 opacity-80">Predicted Status:</p>
+                <p class="text-6xl md:text-7xl font-black uppercase tracking-tighter status-{{ output }}">
+                    {{ output }}
+                </p>
+            </div>
+
+            <div class="mt-12">
+                <a href="/home" class="text-[#00ff00] hover:underline underline-offset-8 transition-all">
+                    ← Return to Inspection Form
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

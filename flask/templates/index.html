@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetalHealth - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            /* Dark gradient overlay to ensure text readability over the background image */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                              url('../static/image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans antialiased h-screen flex flex-col hero-bg">
+    
+    <nav class="flex items-center justify-between px-10 py-6 bg-transparent w-full">
+        <div class="text-[#00ff00] text-3xl font-extrabold tracking-wider uppercase">
+            FetalHealth.
+        </div>
+        
+        <div class="flex space-x-10 text-sm font-semibold text-[#00ff00]">
+            <a href="/" class="hover:text-white transition-colors duration-300">Home</a>
+            <a href="#" class="hover:text-white transition-colors duration-300">About</a>
+            <a href="#" class="hover:text-white transition-colors duration-300">Contact</a>
+        </div>
+        
+        <div>
+            <a href="/home" class="border-2 border-[#00ff00] text-[#00ff00] px-8 py-2 rounded hover:bg-[#00ff00] hover:text-black transition-all duration-300 font-medium">
+                Predict
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center text-center px-4">
+        <h1 class="text-5xl md:text-6xl font-bold text-[#00ff00] max-w-4xl leading-tight drop-shadow-2xl">
+            Predict and monitor Fetal <br> Health.
+        </h1>
+    </main>
+
+</body>
+</html>

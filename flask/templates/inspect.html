@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetalHealth - Inspect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <nav class="flex items-center justify-between px-10 py-5 bg-[#ff1493] w-full shadow-md">
+        <div class="text-[#00ff00] text-3xl font-extrabold tracking-wider uppercase">
+            FetalHealth.
+        </div>
+        
+        <div class="flex space-x-8 text-sm font-semibold text-[#00ff00]">
+            <a href="/" class="hover:text-white transition-colors duration-300">Home</a>
+            <a href="/home" class="hover:text-white transition-colors duration-300">Check here</a>
+            <a href="#" class="hover:text-white transition-colors duration-300">Contact</a>
+        </div>
+        
+        <div>
+            <a href="/home" class="border border-[#00ff00] text-[#00ff00] px-6 py-2 rounded hover:bg-[#00ff00] hover:text-[#ff1493] transition-all duration-300 font-medium">
+                Inspect
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center py-12 px-4">
+        <h2 class="text-3xl mb-12 font-light text-gray-700">FetalHealth</h2>
+        
+        <form action="/home" method="POST" class="w-full max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8 text-center">
+                
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">prolongued_decelerations</label>
+                    <input type="text" name="prolongued_decelerations" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">histogram_variance</label>
+                    <input type="text" name="histogram_variance" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">histogram_mode</label>
+                    <input type="text" name="histogram_mode" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">abnormal_short_term_variability</label>
+                    <input type="text" name="abnormal_short_term_variability" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">histogram_median</label>
+                    <input type="text" name="histogram_median" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">accelerations</label>
+                    <input type="text" name="accelerations" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">percentage_of_time_with_abnormal_long_term_variability</label>
+                    <input type="text" name="percentage_of_time_with_abnormal_long_term_variability" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+                <div class="flex flex-col items-center">
+                    <label class="mb-2 font-semibold text-sm">mean_value_of_long_term_variability</label>
+                    <input type="text" name="mean_value_of_long_term_variability" required class="border border-gray-400 p-2 w-full max-w-xs focus:outline-none focus:border-green-500">
+                </div>
+                <div></div>
+
+            </div>
+
+            <div class="mt-12 flex justify-center">
+                <button type="submit" class="bg-[#0f9d58] hover:bg-green-700 text-white px-8 py-2 rounded transition-colors duration-300 font-medium tracking-wide shadow-md">
+                    submit
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

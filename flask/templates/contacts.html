@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetalHealth - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <nav class="flex items-center justify-between px-10 py-5 bg-[#ff1493] w-full shadow-md">
+        <div class="text-[#00ff00] text-3xl font-extrabold tracking-wider uppercase">
+            FetalHealth.
+        </div>
+        
+        <div class="flex space-x-8 text-sm font-semibold text-[#00ff00]">
+            <a href="/" class="hover:text-white transition-colors duration-300">Home</a>
+            <a href="/home" class="hover:text-white transition-colors duration-300">Check here</a>
+            <a href="/contact" class="hover:text-white transition-colors duration-300 text-white">Contact</a>
+        </div>
+        
+        <div>
+            <a href="/home" class="border border-[#00ff00] text-[#00ff00] px-6 py-2 rounded hover:bg-[#00ff00] hover:text-[#ff1493] transition-all duration-300 font-medium">
+                Inspect
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex justify-center py-16 px-4 sm:px-10">
+        <div class="w-full max-w-6xl">
+            
+            <div class="mb-12">
+                <p class="text-sm tracking-widest text-gray-400 font-semibold uppercase flex items-center">
+                    Contact <span class="ml-4 w-12 h-0.5 bg-green-500"></span>
+                </p>
+                <h1 class="text-4xl font-extrabold text-black mt-2 tracking-tight">CONTACT US</h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <div class="space-y-10">
+                    
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 w-14 h-14 bg-green-500 rounded flex items-center justify-center text-white text-xl shadow-md hover:bg-green-600 transition-colors cursor-pointer">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-black mb-2">Location:</h3>
+                            <p class="text-gray-500 leading-relaxed text-sm pr-10">
+                                Survey no. 91, Sundarayya Vignana Kendram,<br>
+                                Technical Block, 6th floor, Madhava Reddy Colony,<br>
+                                Gachibowli, Hyderabad, Telangana 500032
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 w-14 h-14 bg-green-500 rounded flex items-center justify-center text-white text-xl shadow-md hover:bg-green-600 transition-colors cursor-pointer">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-black mb-2">Email:</h3>
+                            <p class="text-gray-500 text-sm">info@thesmartbridge.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 w-14 h-14 bg-green-500 rounded flex items-center justify-center text-white text-xl shadow-md hover:bg-green-600 transition-colors cursor-pointer">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-black mb-2">Call:</h3>
+                            <p class="text-gray-500 text-sm">+91 6304320044</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Your Name" required class="w-full border border-gray-300 px-4 py-3 rounded focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors text-sm">
+                            <input type="email" placeholder="Your Email" required class="w-full border border-gray-300 px-4 py-3 rounded focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors text-sm">
+                        </div>
+                        
+                        <input type="text" placeholder="Subject" required class="w-full border border-gray-300 px-4 py-3 rounded focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors text-sm">
+                        
+                        <textarea rows="6" placeholder="Message" required class="w-full border border-gray-300 px-4 py-3 rounded focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors text-sm resize-y"></textarea>
+                        
+                        <div class="text-center pt-2">
+                            <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-medium px-8 py-3 rounded shadow-md transition-colors duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="fixed bottom-6 right-6 w-10 h-10 bg-green-500 text-white rounded flex items-center justify-center shadow-lg hover:bg-green-600 cursor-pointer transition-colors">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+</body>
+</html>
